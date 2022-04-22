@@ -143,10 +143,11 @@
     <body  onLoad="localize(); actualizaReloj();">
         <div id="general">
             <div id="fichar">
-                <form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">
-                <!--<form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">-->
+                <!--<form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">-->
+                <form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">
 
                     <input type="text" name="action" id="action" hidden>
+                    <input type="text" name="ctrl" id="ctrl" value="Prueba_titulo">
                     <p>Hora actual:<input type="text" name="hora" id="hora" readonly></p>
 
                     <p>Latitud:<input type="text" name="latitud" id="latitud" readonly></p>
@@ -170,10 +171,11 @@
                 </form>
             </div>
             <div id="listado">
-                <form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">
-                <!--<form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">-->
+                <!--<form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">-->
+                <form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">
 
                     <input type="text" name="action" id="action" value="get_listado" hidden>
+                    <input type="text" name="ctrl" id="ctrl" value="Prueba_titulo">
                     <input type="text" name="firma" id="firma2" hidden>
                     <p>Usuario:<br><select name="userid" id="userid" class="browser-default" onchange="actualizaUserid()">
                         <option value=''>Seleccione usuario</option>
