@@ -101,10 +101,7 @@
             margin: 0;
             background-color: #58585e;
         }
-        #fichar {
-            margin: 20px;
-        }
-        #listado {
+        #cajita {
             margin: 20px;
         }
         .btn {
@@ -113,12 +110,7 @@
             font-weight: bold;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-size: large;
-        }
-        #submit1 {
             background-color: #78ab58;
-        }
-        #submit1 {
-            background-color: #fea256;
         }
         p {
             font-weight: bolder;
@@ -129,8 +121,8 @@
 
 </head>
     <body  onLoad="localize();actualizaReloj();">
-        <div id="fichar">
-            <form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">
+        <div id="cajita">
+            <form method="post" action="http://34.250.87.155/assistancecontrolwebservice/index.php" target="_blank">
 
                 <input type="text" name="action" id="action" hidden>
                 <p>Hora actual:<input type="text" name="hora" id="hora" readonly></p>
@@ -151,27 +143,8 @@
                     <option value='4'>Alejandro</option>
                 </select></p>
                 
-                <!-- FICHAR -->
-                <input class="btn" name="submit" id="submit1" value="Fichar" type="submit">
-            </form>
-        </div>
-        <div id="listado">
-            <form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">
-
-                <input type="text" name="action" id="action" value="get_listado" hidden>
-                <input type="text" name="firma" id="firma" value="4fd5e23c9104474e27cf70f733a02d9813a5c2aad5a1bba7d34a06fe640f6268" hidden>
-                <p>Usuario:<br><select name="userid" id="userid" class="browser-default">
-                    <option value=''>Seleccione usuario</option>
-                    <option value='4'>Alejandro</option>
-                </select></p>
-                
-                <!-- FICHAR -->
-                <input class="btn" name="submit" id="submit2" value="Listado" type="submit">
+                <input class="btn" name="submit" id="submit" value="Check" type="submit">
             </form>
         </div>
     </body>
 </html>
-
-<?php
-
-?>
