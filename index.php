@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="core/app/img/icon.png">
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
@@ -143,8 +144,8 @@
     <body  onLoad="localize(); actualizaReloj();">
         <div id="general">
             <div id="fichar">
-                <!--<form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">-->
-                <form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">
+                <form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">
+                <!--<form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">-->
 
                     <input type="text" name="action" id="action" hidden>
                     <input type="text" name="ctrl" id="ctrl" value="Prueba_titulo">
@@ -171,8 +172,8 @@
                 </form>
             </div>
             <div id="listado">
-                <!--<form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">-->
-                <form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">
+                <form method="post" action="http://34.250.87.155/assistanceControlWebService/index.php" target="_blank">
+                <!--<form method="post" action="http://localhost/assistanceControlWebService/index.php" target="_blank">-->
 
                     <input type="text" name="action" id="action" value="get_listado" hidden>
                     <input type="text" name="ctrl" id="ctrl" value="Prueba_titulo">
